@@ -62,7 +62,7 @@ public final class ImmutableLinkedList implements ImmutableList {
             return this;
         }
         ImmutableLinkedList newList = copy(this);
-        newList.size++;
+        newList.size--;
 
         if (index == 0) {
             newList.head = newList.head.getNext();
