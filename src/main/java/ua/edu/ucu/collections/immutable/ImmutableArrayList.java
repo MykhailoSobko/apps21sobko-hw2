@@ -14,6 +14,10 @@ public final class ImmutableArrayList implements ImmutableList {
         size = 0;
     }
 
+    public Object[] getItems() {
+        return items;
+    }
+
     @Override
     public ImmutableList add(Object e) {
         return addAll(new Object[] {e});
