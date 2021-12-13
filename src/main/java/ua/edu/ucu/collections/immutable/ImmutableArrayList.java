@@ -15,7 +15,7 @@ public final class ImmutableArrayList implements ImmutableList {
     }
 
     public Object[] getItems() {
-        return items;
+        return items.clone();
     }
 
     @Override
